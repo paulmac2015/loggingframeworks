@@ -2,6 +2,7 @@
 using Log4NetTests;
 using log4net;
 using log4net.Config;
+using log4net.Appender;
 
 // Configure log4net using the .log4net file
 // This will cause log4net to look for a configuration file
