@@ -12,3 +12,8 @@ capability.
 =========================================================================================================================================
 So configuration of Log4Net seems to me a bit more comp[licated than Nlog.  Log4Net uses clasic threading techniques to accomplish
 asyncronous logging as opposed to just adding a config file entry with Nlog.
+
+Enterprise Library Logging is a bit more complex than the other logging frameworks.  First, logging and exception logging are seperated 
+into two seperate assemblies.  Logging exceptions requires you to configure the exception logging assembly and implement implement the exception
+handling block.  Additionaly, if you plan to log entries to a database you need to install and configure the 
+EnterpriseLibrary.Logging.Database assembly.
